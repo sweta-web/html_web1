@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhubaneswar site</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            border: 2px solid black;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f0f0f0;
+            padding: 5px;
+            height:auto;
+            width:99%;
+            border: 2px solid black;
+        }
+        .header img {
+            width: 80px;
+            height: 50px;
+            border: 1px solid black;
+        }
+        .header div {
+            display: flex;
+            align-items: center;
+        }
+        .header div a {
+            margin-left: 10px;
+            text-decoration: none;
+            color: #2b0fcb;
+            font-weight: bold;
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .header a:last-child {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .welcome-message {
+            position: relative;
+            text-align: center;
+            color: rgba(117, 135, 173, 0.819);
+            border: 1px solid black;
+            height: 50vh; /* Adjust height relative to viewport */
+            min-height: 300px; /* Ensure a minimum height */
+            overflow: hidden;
+            
+        }
+        .welcome-message img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.5;
+        }
+        .welcome-message::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('bgimage.jpg') center/cover no-repeat;
+            opacity: 0.7;
+            z-index: 0;
+        }
+        .welcome-message h1 {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+            z-index: 1;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            padding: 10px;
+        }
+        .content div {
+            background: #c8cca596;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .content img {
+            width: 100%;
+            height: auto;
+            border: 1px solid black;
+            opacity: 1;
+        }
+        .video {
+            text-align: center;
+            padding: 2px;
+            max-width: 99%;
+            max-height: 100%;
+            border: 1px solid black;
+            background: url('bgimage.jpg') center/cover no-repeat;
+        }
+        
+        .footer {
+            text-align: right;
+            padding: 10px;
+            background: #f0f0f0;
+            border: 1px solid black;
+            background: url('bgimage.jpg') center/cover no-repeat;
+        }
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="header">
+        <div>
+            <img src="logo.jpg" alt="Logo">
+            <a href="#">tripadvisor.in</a>
+        </div>
+        <a href="#">CONTACT: +783465296</a>
+    </div>
+
+    <div class="welcome-message">
+        <h1>WELCOME <br>TO<br>Bhubaneswar</h1>
+    </div>
+
+    <div class="content">
+        <div>
+            <p>Bhubaneswar is one of the famed cities of Odisha; it is the capital of the state. The city is among one of the oldest cities of India, finding its origin around the 2nd century B.C during the Chedi dynasty.<br>  Bhubaneswar got its name from Tribhubaneswar meaning Lord Shiva. Since the establishment of the city, Bhubaneswar has been known by different names; Toshali, Nagar Kalinga, Kalinga Nagar, Ekamra Kanan, Mandira Malini Nagar are a few. The City of Temples is the largest city in Odisha, serving to be one of the centres of religious and economic importance in Eastern India.
+            <br><br>   Whether you want to satisfy your religious appetite or just love exploring places that radiate a place’s history and culture, Bhubaneswar’s trove of historical temples will leave you in awe. There is no shortage of incredible religious sites to visit in this city. Here are some of the most popular temples you should definitely visit when in Bhubaneswar. 
+            </p>
+            </div>
+        <div>
+            <img src="imagebbsr.jpg" alt="Image 1">
+        </div>
+        <div>
+            <img src="dhauli-img.jpg" alt="Image 2">
+        </div>
+        <div>
+            <p>The old town or "Temple Town", the oldest part of the city, is characterised by many temples, including the Lingaraja, Nilakantha Siva, Rajarani and Muktesvara temples, standing alongside residential areas. Additional structures include the Somabaresvara Siva Temple and the Kartikesvara Siva Temple. The area is congested, with narrow roads and poor infrastructure.[36] Among neighbourhoods in the old town are Rajarani Colony, Pandaba Nagar, Brahmeswara Bagh, Lingaraja Nagar, Gouri Nagar, Bhimatangi, Kapilaprasad and Sundarpada.<br><br>
+                Bhubaneswar's major sporting arena is the Kalinga Stadium, having facilities for athletics, football, hockey, basketball, tennis, table tennis and swimming.It hosted the Odisha Hockey World Cup in November–December 2018 and becoming the first city to host two consecutive Field Hockey World cup by hosting the FIH WC with Rourkela in January 2023. Kalinga Lancers, the sixth franchise of Hockey India League (HIL) and Odisha FC of Indian Super League (ISL) are based in Bhubaneswar with Kalinga Stadium as their home ground. East Coast Railway Stadium, a prominent cricket stadium hosts Ranji Trophy and other matches.<br><br>
+            </div>
+    </div>
+
+    <div class="video">
+        <iframe width="700" height="350" src="https://www.youtube.com/embed/3thoeeUsgqU?si=FDnvyiE4-fF0GsUv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="footer">
+        <small>Bhubaneswar Municipal Corporation,BMC-tripadvisor<br>
+        Bhubaneswar-751022,Odisha,India</small>
+    </div>
+</div>
+</body>
+</html>
